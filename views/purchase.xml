@@ -1,0 +1,16 @@
+<odoo>
+    <data>
+        <!-- Inherit Form View to Modify it -->
+        <record id="retail_purchase_order_form" model="ir.ui.view">
+            <field name="name">purchase.order</field>
+            <field name="model">purchase.order</field>
+            <field name="inherit_id" ref="purchase.purchase_order_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//button[@name='button_confirm']" position="after">
+                    <button name="edit_price" string="Edit Price" type="object" states="done" class="oe_highlight"/>
+                    <button name="update_price" string="Update" type="object" states="purchase" class="oe_highlight"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,20 @@
+<odoo>
+    <data>
+
+        <record id="purchase_action_view" model="ir.actions.act_window">
+            <field name="name">Purchase Order</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">purchase.order</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record id="sale_action_view" model="ir.actions.act_window">
+            <field name="name">Sale Order</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">sale.order</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem id="retail_menu_root" name="Retail" />
+        <menuitem id="sale_menu" name="Sale" parent="retail_menu_root" action="sale_action_view"/>
+        <menuitem id="purchase_menu" name="Purchase" parent="retail_menu_root" action="purchase_action_view"/>
+    </data>
+</odoo>
