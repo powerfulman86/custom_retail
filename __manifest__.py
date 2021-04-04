@@ -17,4 +17,7 @@
         'views/stock.xml',
         'views/menu.xml',
     ],
+    'installable': True,
+    'application': True,
+    'auto_install': False,
 }
