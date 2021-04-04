@@ -1,5 +1,41 @@
 <odoo>
     <data>
+        <!--purchase orders-->
+        <record id="purchase_action_view" model="ir.actions.act_window">
+            <field name="name">Purchase Order</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">purchase.order</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!--purchase payment-->
+        <record id="action_move_in_receipt_type" model="ir.actions.act_window">
+            <field name="name">Receipts</field>
+            <field name="res_model">account.move</field>
+            <field name="view_mode">tree,kanban,form</field>
+            <field name="view_id" ref="view_invoice_tree"/>
+            <field name="search_view_id" ref="view_account_invoice_filter"/>
+            <field name="domain">[('type', '=', 'in_receipt')]</field>
+            <field name="context">{'default_type': 'in_receipt'}</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Register a new purchase receipt
+                </p>
+                <p>
+                    When the purchase receipt is confirmed, you can record the
+                    vendor payment related to this purchase receipt.
+                </p>
+            </field>
+        </record>
+
+        <record id="product_supplierinfo_type_action" model="ir.actions.act_window">
+            <field name="name">Vendor Pricelists</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">product.supplierinfo</field>
+            <field name="view_mode">tree,form,kanban</field>
+            <field name="context">{'visible_product_tmpl_id':False}</field>
+        </record>
+
         <!-- Inherit Form View to Modify it -->
         <record id="retail_purchase_order_form" model="ir.ui.view">
             <field name="name">purchase.order</field>

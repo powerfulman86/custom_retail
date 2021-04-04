@@ -3,17 +3,18 @@
     'name': "custom_retail",
     'summary': """custom_retail""",
     'description': """custom_retail""",
-    'author': "My Company",
-    'website': "http://www.yourcompany.com",
-    'category': 'Uncategorized',
+    'author': "CubicIt Egypt",
+    'category': 'other',
     'version': '0.1',
-    'depends': ['base', 'sale', 'purchase', 'stock'],
+    'depends': ['base', 'sale', 'purchase', 'stock', 'account'],
 
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
-        'views/menu.xml',
         'views/purchase.xml',
         'views/sale.xml',
+        'views/account.xml',
+        'views/stock.xml',
+        'views/menu.xml',
     ],
 }
