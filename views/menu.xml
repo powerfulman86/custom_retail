@@ -1,35 +1,60 @@
 <odoo>
     <data>
 
-        <menuitem id="retail_menu_root" name="Retail"  web_icon="custom_retail,static/description/icon.png"/>
+        <menuitem id="retail_menu_root" name="Retail" web_icon="custom_retail,static/description/icon.png"/>
 
+        <!--Inventory-->
         <menuitem id="stock_menu" name="Stock" parent="retail_menu_root" sequence="1"/>
-        <menuitem id="warehouse_menu" name="Warehouse" parent="stock_menu" sequence="1" action="action_warehouse_form"/>
-        <menuitem id="products" name="Products" parent="stock_menu" sequence="2"
-                  action="product_template_action_product"/>
-        <menuitem id="product_category" name="Product Category" parent="stock_menu" sequence="3"
-                  action="product_category_action_form"/>
+        <menuitem id="warehouse_menu" name="Warehouse" parent="stock_menu" sequence="1"
+                  action="stock.action_warehouse_form"/>
+        <menuitem id="product_category" name="Product Category" parent="stock_menu" sequence="2"
+                  action="product.product_category_action_form"/>
+        <menuitem id="products" name="Products" parent="stock_menu" sequence="3"
+                  action="stock.product_template_action_product"/>
+        <menuitem id="warehouse_transfer" name="Transfers" parent="stock_menu" sequence="4"
+                  action="stock.action_picking_tree_all"/>
+        <menuitem id="menu_valuation" name="Inventory Valuation" parent="stock_menu" sequence="5"
+                  action="stock.action_inventory_form"/>
 
+        <!--Purchase-->
         <menuitem id="purchase_menu" name="Purchase" parent="retail_menu_root" sequence="2"/>
         <menuitem id="purchase_orders" name="Purchase Orders" parent="purchase_menu" sequence="1"
-                  action="purchase_action_view"/>
-        <menuitem id="purchase_payment" name="Purchase Orders Payment" parent="purchase_menu" sequence="2"
-                  action="action_move_in_receipt_type"/>
-        <menuitem id="vendor_pricelist" name="Vendor PriceList" parent="purchase_menu" sequence="3"
-                  action="product_supplierinfo_type_action"/>
+                  action="purchase.purchase_form_action"/>
+        <menuitem id="menu_retail_products" action="purchase.product_normal_action_puchased" parent="purchase_menu"
+                  sequence="2"/>
+        <menuitem id="retail_vendor" name="Vendors" parent="purchase_menu" sequence="2"
+                  action="account.res_partner_action_supplier"/>
+        <menuitem id="purchase_payment" name="Purchase Orders Payment" parent="purchase_menu" sequence="3"
+                  action="account.action_account_payments_payable"/>
+        <menuitem id="vendor_pricelist" name="Vendor PriceList" parent="purchase_menu" sequence="4"
+                  action="product.product_supplierinfo_type_action"/>
 
+        <!--Sales-->
         <menuitem id="sale_menu" name="Sale" parent="retail_menu_root" sequence="3"/>
-        <menuitem id="sale_orders" name="Sales Orders" parent="sale_menu" sequence="1" action="sale_action_view"/>
-        <menuitem id="sale_payment" name="Sales Orders Payment" parent="sale_menu" sequence="2"
-                  action="action_move_out_receipt_type"/>
-        <menuitem id="sale_pricelist" name="Sales PriceList" parent="sale_menu" sequence="3"
-                  action="product_pricelist_action2"/>
+        <menuitem id="sale_orders" name="Sales Orders" parent="sale_menu" sequence="1" action="sale.action_orders"/>
+        <menuitem id="menu_products" action="sale.product_template_action" parent="sale_menu" sequence="2"/>
 
+        <menuitem id="sale_customers" name="Customers" parent="sale_menu" sequence="2"
+                  action="account.res_partner_action_customer"/>
+        <menuitem id="sale_payment" name="Sales Orders Payment" parent="sale_menu" sequence="3"
+                  action="account.action_account_payments"/>
+        <menuitem id="sale_pricelist" name="Sales PriceList" parent="sale_menu" sequence="4"
+                  action="product.product_pricelist_action2"/>
 
-        <!--        <menuitem id="payment_menu" name="Payment" parent="retail_menu_root" sequence="4"/>-->
-        <!--        <menuitem id="payment" name="Payments" parent="payment_menu" sequence="1"/>-->
-        <!--        <menuitem id="sale_payment" name="Purchase Orders Payment" parent="sale_menu" sequence="2"/>-->
+        <!--Cash&Bank-->
+        <menuitem id="cash_bank_menu" name="Cash - Bank" parent="retail_menu_root" sequence="4"/>
+        <menuitem id="vendor_payment" name="Vendor Payment" parent="cash_bank_menu" sequence="1"
+                  action="account.action_account_payments_payable"/>
+        <menuitem id="customer_payment" name="Customer Payment" parent="cash_bank_menu" sequence="2"
+                  action="account.action_account_payments"/>
 
+        <!--reporting-->
+        <menuitem id="retail_report_menu" name="Reports" parent="retail_menu_root" sequence="5"/>
+        <menuitem id="stock_report" name="Stock Reports" parent="retail_report_menu" sequence="1"/>
+        <menuitem id="sales_report" name="Sales Reports" parent="retail_report_menu" sequence="2"
+                  action="sale.action_order_report_all"/>
+        <menuitem id="purchase_report" name="Purchase Report" parent="retail_report_menu" sequence="3"
+                  action="purchase.action_purchase_order_report_all"/>
 
     </data>
 </odoo>

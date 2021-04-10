@@ -1,0 +1,517 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* custom_retail
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-05 14:13+0000\n"
+"PO-Revision-Date: 2021-04-05 14:13+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: custom_retail
+#: model_terms:ir.actions.act_window,help:custom_retail.product_pricelist_action2
+msgid ""
+"A price is a set of sales prices or rules to compute the price of sales order lines based on\n"
+"                    products, product categories, dates and ordered quantities.\n"
+"                    This is the perfect tool to handle several pricings, seasonal discounts, etc."
+msgstr ""
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_invoice_tree
+msgid "Amount Due"
+msgstr "المبلغ المستحق"
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.product_pricelist_view_search
+#: model_terms:ir.ui.view,arch_db:custom_retail.stock_warehouse_view_search
+msgid "Archived"
+msgstr "ارشيف"
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.product_template_search_form_view_stock
+msgid "Available Products"
+msgstr "الاصناف المتاحة"
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_invoice_tree
+msgid "Bill Date"
+msgstr "تاريخ الفاتورة"
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_account_invoice_filter
+msgid "Cancelled"
+msgstr "ملغى"
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_order_product_search
+msgid "Company"
+msgstr "الشركة"
+
+#. module: custom_retail
+#: model_terms:ir.actions.act_window,help:custom_retail.res_partner_action_customer
+msgid "Create a new customer in your address book"
+msgstr "انشاء عميل جديد"
+
+#. module: custom_retail
+#: model_terms:ir.actions.act_window,help:custom_retail.product_pricelist_action2
+msgid "Create a new pricelist"
+msgstr "انشاء قوائم اسعار جديده"
+
+#. module: custom_retail
+#: model_terms:ir.actions.act_window,help:custom_retail.product_template_action
+#: model_terms:ir.actions.act_window,help:custom_retail.product_template_action_product
+msgid "Create a new product"
+msgstr "انشاء صنف جديد"
+
+#. module: custom_retail
+#: model_terms:ir.actions.act_window,help:custom_retail.action_move_out_receipt_type
+msgid "Create a new sales receipt"
+msgstr "انشاء سند استلام جديد"
+
+#. module: custom_retail
+#: model_terms:ir.actions.act_window,help:custom_retail.res_partner_action_supplier
+msgid "Create a new supplier in your address book"
+msgstr "انشاء بيانات مورد جديد"
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_invoice_tree
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_order_product_search
+msgid "Customer"
+msgstr "عميل"
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_order_product_search
+msgid "Customer Country"
+msgstr "بلد العميل"
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_order_product_search
+msgid "Customer Industry"
+msgstr "صناعة العميل"
+
+#. module: custom_retail
+#: model:ir.actions.act_window,name:custom_retail.res_partner_action_customer
+#: model:ir.ui.menu,name:custom_retail.sale_customers
+msgid "Customers"
+msgstr "العملاء"
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_order_product_search
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: custom_retail
+#: model_terms:ir.actions.act_window,help:custom_retail.action_warehouse_form
+msgid "Define a new warehouse"
+msgstr "انشاء مخزن جديد"
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_account_invoice_filter
+msgid "Draft"
+msgstr "مسوده"
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_account_invoice_filter
+msgid "Due Date"
+msgstr "تاريخ الاستحقاق"
+
+#. module: custom_retail
+#: model:ir.model.fields,field_description:custom_retail.field_sale_order__edit
+#: model:ir.model.fields,field_description:custom_retail.field_sale_order_line__edit
+msgid "Edit"
+msgstr "تعديل"
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.retail_purchase_order_form
+#: model_terms:ir.ui.view,arch_db:custom_retail.retail_sale_order_form
+msgid "Edit Price"
+msgstr "تعديل السعر"
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_order_product_search
+msgid "Extended Filters"
+msgstr ""
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_account_invoice_filter
+msgid "Future Activities"
+msgstr ""
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_account_invoice_filter
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_order_product_search
+msgid "Group By"
+msgstr "تجميع على مستوى"
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_account_invoice_filter
+msgid "In Payment"
+msgstr "في السداد"
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_account_invoice_filter
+msgid "Invoice"
+msgstr "فاتورة"
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_account_invoice_filter
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_invoice_tree
+msgid "Invoice Date"
+msgstr "تاريخ الفاتورة"
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_invoice_tree
+msgid "Invoices"
+msgstr "الفواتير"
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_account_invoice_filter
+msgid "Late Activities"
+msgstr ""
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_account_invoice_filter
+msgid "My Invoices"
+msgstr "فواتيري"
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.product_template_search_form_view_stock
+msgid "Negative Forecasted Quantity"
+msgstr ""
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_account_invoice_filter
+msgid "Not Paid"
+msgstr "غير مدفوعه"
+
+#. module: custom_retail
+#: model_terms:ir.actions.act_window,help:custom_retail.res_partner_action_customer
+msgid "Odoo helps you easily track all activities related to a customer."
+msgstr ""
+
+#. module: custom_retail
+#: model_terms:ir.actions.act_window,help:custom_retail.res_partner_action_supplier
+msgid "Odoo helps you easily track all activities related to a supplier."
+msgstr ""
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_order_product_search
+msgid "Order Date"
+msgstr "تاريخ الاوردر"
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_account_invoice_filter
+msgid "Overdue"
+msgstr "مدفوع بزياده"
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_account_invoice_filter
+msgid "Overdue invoices, maturity date passed"
+msgstr ""
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_account_invoice_filter
+msgid "Paid"
+msgstr "مدفوع"
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_account_invoice_filter
+msgid "Period"
+msgstr ""
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_account_invoice_filter
+msgid "Posted"
+msgstr "فترة"
+
+#. module: custom_retail
+#: model:ir.actions.act_window,name:custom_retail.product_pricelist_action2
+msgid "Pricelists"
+msgstr "قوائم اسعار"
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_order_product_search
+msgid "Product"
+msgstr "صنف"
+
+#. module: custom_retail
+#: model:ir.actions.act_window,name:custom_retail.product_category_action_form
+#: model_terms:ir.ui.view,arch_db:custom_retail.product_category_list_view
+#: model_terms:ir.ui.view,arch_db:custom_retail.product_category_search_view
+msgid "Product Categories"
+msgstr "فئات الاصناف"
+
+#. module: custom_retail
+#: model:ir.ui.menu,name:custom_retail.product_category
+#: model_terms:ir.ui.view,arch_db:custom_retail.product_category_list_view
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_order_product_search
+msgid "Product Category"
+msgstr "فئات الاصناف"
+
+#. module: custom_retail
+#: model:ir.actions.act_window,name:custom_retail.product_template_action
+#: model:ir.actions.act_window,name:custom_retail.product_template_action_product
+#: model:ir.ui.menu,name:custom_retail.menu_products
+#: model:ir.ui.menu,name:custom_retail.menu_retail_products
+#: model:ir.ui.menu,name:custom_retail.products
+msgid "Products"
+msgstr "الاصناف"
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.product_pricelist_view_search
+msgid "Products Price"
+msgstr "سعر الاصناف"
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.product_pricelist_view_search
+msgid "Products Price Search"
+msgstr "بحث عن اسعار الاصناف"
+
+#. module: custom_retail
+#: model:ir.ui.menu,name:custom_retail.purchase_menu
+msgid "Purchase"
+msgstr "المشتريات"
+
+#. module: custom_retail
+#: model:ir.actions.act_window,name:custom_retail.purchase_action_view
+#: model:ir.model,name:custom_retail.model_purchase_order
+msgid "Purchase Order"
+msgstr "أمر شراء"
+
+#. module: custom_retail
+#: model:ir.ui.menu,name:custom_retail.purchase_orders
+msgid "Purchase Orders"
+msgstr "اوامر شراء"
+
+#. module: custom_retail
+#: model:ir.ui.menu,name:custom_retail.purchase_payment
+msgid "Purchase Orders Payment"
+msgstr "سداد اوامر الشراء"
+
+#. module: custom_retail
+#: model:ir.ui.menu,name:custom_retail.purchase_report
+msgid "Purchase Report"
+msgstr "تقرير المشتريات"
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_order_product_search
+msgid "Quotations"
+msgstr "عروض اسعار"
+
+#. module: custom_retail
+#: model:ir.actions.act_window,name:custom_retail.action_move_in_receipt_type
+#: model:ir.actions.act_window,name:custom_retail.action_move_out_receipt_type
+msgid "Receipts"
+msgstr "الاستلامات"
+
+#. module: custom_retail
+#: model_terms:ir.actions.act_window,help:custom_retail.action_move_in_receipt_type
+msgid "Register a new purchase receipt"
+msgstr "تسجيل سند استلام مشتريات جديد"
+
+#. module: custom_retail
+#: model:ir.ui.menu,name:custom_retail.retail_report_menu
+msgid "Reports"
+msgstr "التقارير"
+
+#. module: custom_retail
+#: model:ir.ui.menu,name:custom_retail.retail_menu_root
+msgid "Retail"
+msgstr "التجزئه"
+
+#. module: custom_retail
+#: model:ir.ui.menu,name:custom_retail.sale_menu
+msgid "Sale"
+msgstr "المبيعات"
+
+#. module: custom_retail
+#: model:ir.actions.act_window,name:custom_retail.sale_action_view
+msgid "Sale Order"
+msgstr "امر بيع"
+
+#. module: custom_retail
+#: model:ir.actions.act_window,name:custom_retail.action_order_report_all
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_order_product_search
+msgid "Sales Analysis"
+msgstr "تحليل المبيعات"
+
+#. module: custom_retail
+#: model:ir.model,name:custom_retail.model_sale_order
+msgid "Sales Order"
+msgstr "أمر البيع"
+
+#. module: custom_retail
+#: model:ir.model,name:custom_retail.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "بند أمر المبيعات"
+
+#. module: custom_retail
+#: model:ir.ui.menu,name:custom_retail.sale_orders
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_order_product_search
+msgid "Sales Orders"
+msgstr "اوامر البيع"
+
+#. module: custom_retail
+#: model:ir.ui.menu,name:custom_retail.sale_payment
+msgid "Sales Orders Payment"
+msgstr "سداد اوامر البيع"
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_invoice_tree
+msgid "Sales Person"
+msgstr "مسئول البيع"
+
+#. module: custom_retail
+#: model:ir.ui.menu,name:custom_retail.sale_pricelist
+msgid "Sales PriceList"
+msgstr "قائمة اسعار البيع"
+
+#. module: custom_retail
+#: model:ir.ui.menu,name:custom_retail.sales_report
+msgid "Sales Reports"
+msgstr "تقارير المبيعات"
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_order_product_search
+msgid "Sales Team"
+msgstr "فرق المبيعات"
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_account_invoice_filter
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_order_product_search
+msgid "Salesperson"
+msgstr "مسئول المبيعات"
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_account_invoice_filter
+msgid "Search Invoice"
+msgstr "البحث عن الفواتير"
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_account_invoice_filter
+msgid "Show all records which has next action date is before today"
+msgstr ""
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_invoice_tree
+msgid "Source Document"
+msgstr ""
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_account_invoice_filter
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_order_product_search
+msgid "Status"
+msgstr "الحاله"
+
+#. module: custom_retail
+#: model:ir.ui.menu,name:custom_retail.stock_menu
+msgid "Stock"
+msgstr "المخازن"
+
+#. module: custom_retail
+#: model:ir.ui.menu,name:custom_retail.stock_report
+msgid "Stock Reports"
+msgstr "تقارير المخازن"
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_invoice_tree
+msgid "Tax"
+msgstr "الضرئب"
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_invoice_tree
+msgid "Tax Excluded"
+msgstr "غير شامله الضرائب"
+
+#. module: custom_retail
+#: model_terms:ir.actions.act_window,help:custom_retail.action_order_report_all
+msgid ""
+"This report performs analysis on your quotations and sales orders. Analysis check your\n"
+"                sales revenues and sort it by different group criteria (salesman, partner, product, etc.) Use this\n"
+"                report to perform analysis on sales not having invoiced yet. If you want to analyse your turnover, you\n"
+"                should use the Invoice Analysis report in the Accounting application."
+msgstr ""
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_account_invoice_filter
+msgid "Today Activities"
+msgstr ""
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_invoice_tree
+msgid "Total"
+msgstr "الاجمالي"
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.retail_purchase_order_form
+#: model_terms:ir.ui.view,arch_db:custom_retail.retail_sale_order_form
+msgid "Update"
+msgstr "تحديث"
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_invoice_tree
+msgid "Vendor"
+msgstr "مورد"
+
+#. module: custom_retail
+#: model:ir.ui.menu,name:custom_retail.vendor_pricelist
+msgid "Vendor PriceList"
+msgstr "قائمة اسعار المورد"
+
+#. module: custom_retail
+#: model:ir.actions.act_window,name:custom_retail.product_supplierinfo_type_action
+msgid "Vendor Pricelists"
+msgstr "قوائم اسعار الموردين"
+
+#. module: custom_retail
+#: model:ir.actions.act_window,name:custom_retail.res_partner_action_supplier
+#: model:ir.ui.menu,name:custom_retail.retail_vendor
+msgid "Vendors"
+msgstr "الموردين"
+
+#. module: custom_retail
+#: model:ir.ui.menu,name:custom_retail.warehouse_menu
+#: model_terms:ir.ui.view,arch_db:custom_retail.stock_warehouse_view_search
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_warehouse_tree
+msgid "Warehouse"
+msgstr "المخزن"
+
+#. module: custom_retail
+#: model:ir.actions.act_window,name:custom_retail.action_warehouse_form
+msgid "Warehouses"
+msgstr "المخازن"
+
+#. module: custom_retail
+#: model_terms:ir.actions.act_window,help:custom_retail.action_move_in_receipt_type
+msgid ""
+"When the purchase receipt is confirmed, you can record the\n"
+"                    vendor payment related to this purchase receipt."
+msgstr ""
+
+#. module: custom_retail
+#: model_terms:ir.actions.act_window,help:custom_retail.action_move_out_receipt_type
+msgid ""
+"When the sale receipt is confirmed, you can record the customer\n"
+"                    payment related to this sales receipt."
+msgstr ""
+
+#. module: custom_retail
+#: model_terms:ir.actions.act_window,help:custom_retail.product_pricelist_action2
+msgid ""
+"You can assign pricelists to your customers or select one when creating a "
+"new sales quotation."
+msgstr ""
+
+#. module: custom_retail
+#: model_terms:ir.actions.act_window,help:custom_retail.product_template_action
+msgid ""
+"You must define a product for everything you sell or purchase,\n"
+"                    whether it's a storable product, a consumable or a service."
+msgstr ""

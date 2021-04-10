@@ -11,10 +11,6 @@
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
-        'views/purchase.xml',
-        'views/sale.xml',
-        'views/account.xml',
-        'views/stock.xml',
         'views/menu.xml',
     ],
     'installable': True,
