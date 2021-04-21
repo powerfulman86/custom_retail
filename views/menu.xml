@@ -1,6 +1,14 @@
 <odoo>
     <data>
 
+        <!-- Hide Stock Menus -->
+        <!--        <delete model="ir.ui.menu" id="stock.menu_stock_root" />-->
+        <!--        <delete model="ir.ui.menu" id="stock.stock_picking_type_menu" />-->
+        <!--        <delete model="ir.ui.menu" id="stock.menu_stock_warehouse_mgmt" />-->
+        <!--        <delete model="ir.ui.menu" id="stock.menu_stock_inventory_control" />-->
+        <!--        <delete model="ir.ui.menu" id="stock.menu_warehouse_report" />-->
+        <!--        <delete model="ir.ui.menu" id="stock.menu_stock_config_settings" />-->
+
         <menuitem id="retail_menu_root" name="Retail" web_icon="custom_retail,static/description/icon.png"/>
 
         <!--Inventory-->
@@ -55,6 +63,28 @@
                   action="sale.action_order_report_all"/>
         <menuitem id="purchase_report" name="Purchase Report" parent="retail_report_menu" sequence="3"
                   action="purchase.action_purchase_order_report_all"/>
+
+        <menuitem id="account_report_menu_root" name="Accounting " parent="retail_report_menu" sequence="4"/>
+
+
+        <menuitem id="menu_aged_trial_balance1" name="Aged Partner Balance" sequence="7"
+                  action="accounting_pdf_reports.action_account_aged_balance_view" parent="account_report_menu_root"/>
+        <menuitem id="menu_account_report_bs1" name="Balance Sheet" sequence="5"
+                  action="accounting_pdf_reports.action_account_report_bs"
+                  parent="account_report_menu_root" groups="account.group_account_user"/>
+        <menuitem  id="menu_general_ledger1" name="General Ledger" sequence="3" parent="account_report_menu_root"
+                action="accounting_pdf_reports.action_account_general_ledger_menu" groups="account.group_account_user" />
+        <menuitem id="menu_print_journal1" name="Journals Audit" sequence="1" parent="account_report_menu_root"
+                action="accounting_pdf_reports.action_account_print_journal_menu" groups="account.group_account_manager,account.group_account_user" />
+        <menuitem id="menu_partner_ledger1" name="Partner Ledger" sequence="2" parent="account_report_menu_root"
+                action="accounting_pdf_reports.action_account_partner_ledger_menu" groups="account.group_account_user" />
+        <menuitem id="menu_account_report_pl1" name="Profit and Loss" sequence="6" action="accounting_pdf_reports.action_account_report_pl"
+                  parent="account_report_menu_root" groups="account.group_account_user"/>
+        <menuitem id="menu_account_report1" name="Tax Report" sequence="8" action="accounting_pdf_reports.action_account_tax_report"
+                  parent="account_report_menu_root" groups="account.group_account_manager,account.group_account_user"/>
+        <menuitem id="menu_general_Balance_report1" name="Trial Balance" sequence="4" parent="account_report_menu_root"
+                  action="accounting_pdf_reports.action_account_balance_menu" groups="account.group_account_user"/>
+
 
     </data>
 </odoo>
