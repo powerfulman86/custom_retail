@@ -13,6 +13,15 @@ class SaleOrder(models.Model):
     _inherit = 'sale.order'
 
     edit = fields.Boolean()
+    retail_driver_id = fields.Many2one(comodel_name='retail.driver', string='Driver')
+
+    def _prepare_invoice(self):
+        invoice_vals = super(SaleOrder, self)._prepare_invoice()
+        invoice_vals.update({
+            'retail_driver_id': self.retail_driver_id.id,
+        })
+        return invoice_vals
+
 
     def action_confirm(self):
         res = super(SaleOrder, self).action_confirm()

@@ -14,6 +14,8 @@
         'views/menu.xml',
         'views/partner.xml',
         'views/driver.xml',
+        'views/invoice.xml',
+        'views/sale.xml',
     ],
     'installable': True,
     'application': True,

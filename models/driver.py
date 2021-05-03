@@ -1,8 +1,9 @@
 from odoo import fields, models, api
 
 
-class ModelName(models.Model):
+class RetailDriver(models.Model):
     _name = 'retail.driver'
+    _rec_name = 'partner_id'
     _description = 'Retail Driver'
     _inherit = ['mail.thread', 'mail.activity.mixin']
 
