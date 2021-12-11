@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="stock_pack_order_seq" model="ir.sequence">
+            <field name="name">Stock Pack Order Sequence</field>
+            <field name="code">stock.pack</field>
+            <field name="prefix">SP/</field>
+            <field name="padding">4</field>
+        </record>
+    </data>
+</odoo>

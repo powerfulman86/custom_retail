@@ -22,7 +22,6 @@ class SaleOrder(models.Model):
         })
         return invoice_vals
 
-
     def action_confirm(self):
         res = super(SaleOrder, self).action_confirm()
         for pick in self.picking_ids:

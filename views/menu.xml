@@ -1,27 +1,20 @@
 <odoo>
     <data>
 
-        <!-- Hide Stock Menus -->
-        <!--        <delete model="ir.ui.menu" id="stock.menu_stock_root" />-->
-        <!--        <delete model="ir.ui.menu" id="stock.stock_picking_type_menu" />-->
-        <!--        <delete model="ir.ui.menu" id="stock.menu_stock_warehouse_mgmt" />-->
-        <!--        <delete model="ir.ui.menu" id="stock.menu_stock_inventory_control" />-->
-        <!--        <delete model="ir.ui.menu" id="stock.menu_warehouse_report" />-->
-        <!--        <delete model="ir.ui.menu" id="stock.menu_stock_config_settings" />-->
-
-        <menuitem id="retail_menu_root" name="Retail" web_icon="custom_retail,static/description/icon.png"/>
+        <menuitem id="retail_menu_root" name="Retail" web_icon="custom_retail,static/description/icon.png"
+                  action="board.open_board_my_dash_action"/>
 
         <!--Inventory-->
-        <menuitem id="stock_menu" name="Stock" parent="retail_menu_root" sequence="1"/>
-        <menuitem id="warehouse_menu" name="Warehouse" parent="stock_menu" sequence="1"
-                  action="stock.action_warehouse_form"/>
-        <menuitem id="product_category" name="Product Category" parent="stock_menu" sequence="2"
-                  action="product.product_category_action_form"/>
-        <menuitem id="products" name="Products" parent="stock_menu" sequence="3"
+        <menuitem id="retail_stock_menu" name="Stock" parent="retail_menu_root" sequence="1"/>
+        <menuitem id="products" name="Products" parent="retail_stock_menu" sequence="1"
                   action="stock.product_template_action_product"/>
-        <menuitem id="warehouse_transfer" name="Transfers" parent="stock_menu" sequence="4"
-                  action="stock.action_picking_tree_all"/>
-        <menuitem id="menu_valuation" name="Inventory Valuation" parent="stock_menu" sequence="5"
+        <menuitem id="product_product_menu" name="Product Variants" action="stock.stock_product_normal_action"
+                  parent="retail_stock_menu" sequence="2"/>
+        <menuitem id="product_Pack" name="Product Pack" parent="retail_stock_menu" sequence="3"
+                  action="action_packing_view"/>
+        <menuitem id="warehouse_transfer" name="Transfers" parent="retail_stock_menu" sequence="4"
+                  action="stock.stock_picking_type_action"/>
+        <menuitem id="menu_valuation" name="Inventory Valuation" parent="retail_stock_menu" sequence="5"
                   action="stock.action_inventory_form"/>
 
         <!--Purchase-->
@@ -64,27 +57,42 @@
         <menuitem id="purchase_report" name="Purchase Report" parent="retail_report_menu" sequence="3"
                   action="purchase.action_purchase_order_report_all"/>
 
-        <menuitem id="account_report_menu_root" name="Accounting " parent="retail_report_menu" sequence="4"/>
+<!--        <menuitem id="account_report_menu_root" name="Accounting " parent="retail_report_menu" sequence="4"/>-->
+<!--        <menuitem id="menu_aged_trial_balance1" name="Aged Partner Balance" sequence="7"-->
+<!--                  action="accounting_pdf_reports.action_account_aged_balance_view" parent="account_report_menu_root"/>-->
+<!--        <menuitem id="menu_account_report_bs1" name="Balance Sheet" sequence="5"-->
+<!--                  action="accounting_pdf_reports.action_account_report_bs"-->
+<!--                  parent="account_report_menu_root" groups="account.group_account_user"/>-->
+<!--        <menuitem id="menu_general_ledger1" name="General Ledger" sequence="3" parent="account_report_menu_root"-->
+<!--                  action="accounting_pdf_reports.action_account_general_ledger_menu"-->
+<!--                  groups="account.group_account_user"/>-->
+<!--        <menuitem id="menu_print_journal1" name="Journals Audit" sequence="1" parent="account_report_menu_root"-->
+<!--                  action="accounting_pdf_reports.action_account_print_journal_menu"-->
+<!--                  groups="account.group_account_manager,account.group_account_user"/>-->
+<!--        <menuitem id="menu_partner_ledger1" name="Partner Ledger" sequence="2" parent="account_report_menu_root"-->
+<!--                  action="accounting_pdf_reports.action_account_partner_ledger_menu"-->
+<!--                  groups="account.group_account_user"/>-->
+<!--        <menuitem id="menu_account_report_pl1" name="Profit and Loss" sequence="6"-->
+<!--                  action="accounting_pdf_reports.action_account_report_pl"-->
+<!--                  parent="account_report_menu_root" groups="account.group_account_user"/>-->
+<!--        <menuitem id="menu_account_report1" name="Tax Report" sequence="8"-->
+<!--                  action="accounting_pdf_reports.action_account_tax_report"-->
+<!--                  parent="account_report_menu_root" groups="account.group_account_manager,account.group_account_user"/>-->
+<!--        <menuitem id="menu_general_Balance_report1" name="Trial Balance" sequence="4" parent="account_report_menu_root"-->
+<!--                  action="accounting_pdf_reports.action_account_balance_menu" groups="account.group_account_user"/>-->
 
-
-        <menuitem id="menu_aged_trial_balance1" name="Aged Partner Balance" sequence="7"
-                  action="accounting_pdf_reports.action_account_aged_balance_view" parent="account_report_menu_root"/>
-        <menuitem id="menu_account_report_bs1" name="Balance Sheet" sequence="5"
-                  action="accounting_pdf_reports.action_account_report_bs"
-                  parent="account_report_menu_root" groups="account.group_account_user"/>
-        <menuitem  id="menu_general_ledger1" name="General Ledger" sequence="3" parent="account_report_menu_root"
-                action="accounting_pdf_reports.action_account_general_ledger_menu" groups="account.group_account_user" />
-        <menuitem id="menu_print_journal1" name="Journals Audit" sequence="1" parent="account_report_menu_root"
-                action="accounting_pdf_reports.action_account_print_journal_menu" groups="account.group_account_manager,account.group_account_user" />
-        <menuitem id="menu_partner_ledger1" name="Partner Ledger" sequence="2" parent="account_report_menu_root"
-                action="accounting_pdf_reports.action_account_partner_ledger_menu" groups="account.group_account_user" />
-        <menuitem id="menu_account_report_pl1" name="Profit and Loss" sequence="6" action="accounting_pdf_reports.action_account_report_pl"
-                  parent="account_report_menu_root" groups="account.group_account_user"/>
-        <menuitem id="menu_account_report1" name="Tax Report" sequence="8" action="accounting_pdf_reports.action_account_tax_report"
-                  parent="account_report_menu_root" groups="account.group_account_manager,account.group_account_user"/>
-        <menuitem id="menu_general_Balance_report1" name="Trial Balance" sequence="4" parent="account_report_menu_root"
-                  action="accounting_pdf_reports.action_account_balance_menu" groups="account.group_account_user"/>
-
+        <!--Configuration-->
+        <menuitem id="custom_retail_configuration_menu" name="Configuration" parent="retail_menu_root" sequence="6"/>
+        <menuitem id="retail_base_settings" name="Settings" parent="custom_retail_configuration_menu" sequence="1"
+                  action="base.res_config_setting_act_window"/>
+        <menuitem id="warehouse_menu" name="Warehouse" parent="custom_retail_configuration_menu" sequence="2"
+                  action="stock.action_warehouse_form"/>
+        <menuitem id="menu_location" action="stock.action_location_form"
+                  parent="custom_retail_configuration_menu" sequence="3"/>
+        <menuitem id="product_category" name="Product Category" parent="custom_retail_configuration_menu" sequence="4"
+                  action="product.product_category_action_form"/>
+        <menuitem action="product.attribute_action" id="menu_attribute_action" name="Product Attributes"
+                  parent="custom_retail_configuration_menu" sequence="5"/>
 
     </data>
 </odoo>
