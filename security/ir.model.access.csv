@@ -2,3 +2,5 @@ id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_retail_driver,retail_driver.retail_driver,model_retail_driver,,1,1,1,1
 access_product_packing_stock_manager,product.packing stock_manager,model_product_packing,stock.group_stock_manager,1,1,1,1
 access_product_packing_user,product.packing user,model_product_packing,base.group_user,1,0,0,0
+access_stock_pack,access.stock.pack,model_stock_pack,stock.group_stock_user,1,1,1,1
+access_stock_pack_line,access.stock.pack.line,model_stock_pack_line,stock.group_stock_user,1,1,1,0

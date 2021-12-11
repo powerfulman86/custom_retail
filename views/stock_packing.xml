@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        
+        <!--packs-->
         <record id="product_packing_tree_view" model="ir.ui.view">
             <field name="name">product.packing.tree.view</field>
             <field name="model">product.packing</field>
             <field name="arch" type="xml">
                 <tree string="Product Packing" editable="bottom">
                     <field name="sequence" widget="handle"/>
+                    <field name="name"/>
                     <field name="product_id"/>
                     <field name="pack_product_id"/>
                     <field name="qty"/>
@@ -32,5 +33,91 @@
                   parent="stock.menu_product_in_config_stock"
                   action="action_packing_view"/>
 
+        <!--stock packing-->
+
+        <record id="view_stock_pack_form" model="ir.ui.view">
+            <field name="name">Stock.Packing.form</field>
+            <field name="model">stock.pack</field>
+            <field name="arch" type="xml">
+                <form string="Stock Packing">
+                    <header>
+                        <button name="action_approve" state="draft" string="Approve" type="object"
+                                class="oe_highlight"/>
+                        <button name="action_cancel" state="approve" string="Cancel" type="object"
+                                class="oe_highlight"/>
+                        <button name="action_done" state="approve" string="Done" type="object" class="oe_highlight"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,approve,done,cancel"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" attrs="{'invisible': [('name','=','/')]}"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="order_date"/>
+                                <field name="warehouse_id"/>
+                                <field name="company_id" invisible="1"/>
+                                <field name="user_id"/>
+                            </group>
+
+                        </group>
+                        <notebook>
+                            <page string="Products">
+                                <field name="order_line">
+                                    <tree string="Stock Pack" editable="bottom">
+                                        <field name="sequence" widget="handle"/>
+                                        <field name="pack_id"/>
+                                        <field name="product_id" readonly="1"/>
+                                        <field name="pack_product_id" readonly="1"/>
+                                        <field name="qty" readonly="1"/>
+                                        <field name="product_weight"/>
+                                        <field name="qty_result"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids"/>
+                        <field name="activity_ids"/>
+                        <field name="message_ids"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_stock_pack_tree" model="ir.ui.view">
+            <field name="name">Stock.Packing.tree</field>
+            <field name="model">stock.pack</field>
+            <field name="arch" type="xml">
+                <tree string="Stock Packing">
+                    <field name="name"/>
+                    <field name="order_date"/>
+                    <field name="warehouse_id"/>
+                    <field name="company_id" groups="base.group_multi_company"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_stock_pack_view" model="ir.actions.act_window">
+            <field name="name">Packing</field>
+            <field name="res_model">stock.pack</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    No packing Order Found. Let's create one!
+                </p>
+                <p>
+                    Transfers allow you to move products from one location to another.
+                </p>
+            </field>
+        </record>
+
+        <menuitem id="menu_stock_packing" name="Stock Packing"
+                  parent="stock.menu_product_in_config_stock"
+                  action="action_stock_pack_view"/>
     </data>
 </odoo>

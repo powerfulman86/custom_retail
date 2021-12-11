@@ -14,7 +14,9 @@
                   action="action_packing_view"/>
         <menuitem id="warehouse_transfer" name="Transfers" parent="retail_stock_menu" sequence="4"
                   action="stock.stock_picking_type_action"/>
-        <menuitem id="menu_valuation" name="Inventory Valuation" parent="retail_stock_menu" sequence="5"
+        <menuitem id="warehouse_pack" name="Packing" parent="retail_stock_menu" sequence="5"
+                  action="action_stock_pack_view"/>
+        <menuitem id="menu_valuation" name="Inventory Valuation" parent="retail_stock_menu" sequence="6"
                   action="stock.action_inventory_form"/>
 
         <!--Purchase-->

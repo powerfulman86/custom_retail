@@ -19,6 +19,7 @@
         'views/driver.xml',
         'views/invoice.xml',
         'views/sale.xml',
+        'views/product_template_views.xml',
 
     ],
     'installable': True,
