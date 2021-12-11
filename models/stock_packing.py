@@ -13,7 +13,7 @@ class ProductPacking(models.Model):
     name = fields.Char('Package Type', required=False)
     sequence = fields.Integer('Sequence', default=1, help="The first in the sequence is the default one.")
     product_id = fields.Many2one('product.product', string='Product', )
-    pack_product_id = fields.Many2one('product.product', string='Pack Product', )
+    pack_product_id = fields.Many2one('product.template', string='Pack Product', )
     qty = fields.Float('Contained Quantity', help="Quantity of products contained in the packaging.")
     product_uom_id = fields.Many2one('uom.uom', related='product_id.uom_id', readonly=True)
     company_id = fields.Many2one('res.company', 'Company', index=True)
