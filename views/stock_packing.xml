@@ -11,7 +11,8 @@
                     <field name="name"/>
                     <field name="product_id"/>
                     <field name="pack_product_id"/>
-                    <field name="qty"/>
+                    <field name="pack_product_uom"/>
+                    <field name="product_uom_category_id" invisible="1"/>
                     <field name="note"/>
                 </tree>
             </field>
@@ -41,11 +42,11 @@
             <field name="arch" type="xml">
                 <form string="Stock Packing">
                     <header>
-                        <button name="action_approve" state="draft" string="Approve" type="object"
+                        <button name="action_approve" states="draft" string="Approve" type="object"
                                 class="oe_highlight"/>
-                        <button name="action_cancel" state="approve" string="Cancel" type="object"
+                        <button name="action_cancel" states="approve" string="Cancel" type="object"
                                 class="oe_highlight"/>
-                        <button name="action_done" state="approve" string="Done" type="object" class="oe_highlight"/>
+                        <button name="action_done" states="approve" string="Done" type="object" class="oe_highlight"/>
                         <field name="state" widget="statusbar" statusbar_visible="draft,approve,done,cancel"/>
                     </header>
                     <sheet>
@@ -69,11 +70,12 @@
                                     <tree string="Stock Pack" editable="bottom">
                                         <field name="sequence" widget="handle"/>
                                         <field name="pack_id"/>
-                                        <field name="product_id" readonly="1"/>
-                                        <field name="pack_product_id" readonly="1"/>
-                                        <field name="qty" readonly="1"/>
-                                        <field name="product_weight"/>
-                                        <field name="qty_result"/>
+                                        <field name="product_id" />
+                                        <field name="product_uom_id" />
+                                        <field name="pack_product_id" />
+                                        <field name="pack_product_uom"/>
+                                        <field name="product_qty"/>
+                                        <field name="product_uom_qty"/>
                                     </tree>
                                 </field>
                             </page>

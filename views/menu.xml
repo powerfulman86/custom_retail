@@ -2,99 +2,139 @@
     <data>
 
         <menuitem id="retail_menu_root" name="Retail" web_icon="custom_retail,static/description/icon.png"
-                  action="board.open_board_my_dash_action"/>
+                  action="board.open_board_my_dash_action">
 
-        <!--Inventory-->
-        <menuitem id="retail_stock_menu" name="Stock" parent="retail_menu_root" sequence="1"/>
-        <menuitem id="products" name="Products" parent="retail_stock_menu" sequence="1"
-                  action="stock.product_template_action_product"/>
-        <menuitem id="product_product_menu" name="Product Variants" action="stock.stock_product_normal_action"
-                  parent="retail_stock_menu" sequence="2"/>
-        <menuitem id="product_Pack" name="Product Pack" parent="retail_stock_menu" sequence="3"
-                  action="action_packing_view"/>
-        <menuitem id="warehouse_transfer" name="Transfers" parent="retail_stock_menu" sequence="4"
-                  action="stock.stock_picking_type_action"/>
-        <menuitem id="warehouse_pack" name="Packing" parent="retail_stock_menu" sequence="5"
-                  action="action_stock_pack_view"/>
-        <menuitem id="menu_valuation" name="Inventory Valuation" parent="retail_stock_menu" sequence="6"
-                  action="stock.action_inventory_form"/>
+            <!--Inventory-->
+            <menuitem id="retail_stock_menu" name="Stock" sequence="1">
+                <menuitem id="products" name="Products" sequence="1"
+                          action="stock.product_template_action_product"/>
+                <menuitem id="product_product_menu" name="Product Variants" action="stock.stock_product_normal_action"
+                          sequence="2"/>
+                <!-- This Menu Item Must have a parent -->
+                <menuitem id="warehouse_transfer" name="Transfers" sequence="5"
+                          action="stock.stock_picking_type_action"/>
+                <menuitem id="warehouse_pack" name="Packing" sequence="6"
+                          action="action_stock_pack_view"/>
+                <menuitem id="menu_valuation" name="Inventory Valuation" sequence="7"
+                          action="stock.action_inventory_form"/>
+            </menuitem>
 
-        <!--Purchase-->
-        <menuitem id="purchase_menu" name="Purchase" parent="retail_menu_root" sequence="2"/>
-        <menuitem id="purchase_orders" name="Purchase Orders" parent="purchase_menu" sequence="1"
-                  action="purchase.purchase_form_action"/>
-        <menuitem id="menu_retail_products" action="purchase.product_normal_action_puchased" parent="purchase_menu"
-                  sequence="2"/>
-        <menuitem id="retail_vendor" name="Vendors" parent="purchase_menu" sequence="2"
-                  action="account.res_partner_action_supplier"/>
-        <menuitem id="purchase_payment" name="Purchase Orders Payment" parent="purchase_menu" sequence="3"
-                  action="account.action_account_payments_payable"/>
-        <menuitem id="vendor_pricelist" name="Vendor PriceList" parent="purchase_menu" sequence="4"
-                  action="product.product_supplierinfo_type_action"/>
+            <!--Purchase-->
+            <menuitem id="purchase_menu" name="Purchase" sequence="2">
+                <menuitem id="purchase_orders" name="Purchase Orders" sequence="1"
+                          action="purchase.purchase_action_dashboard_list"/>
+                <menuitem id="retail_vendor" name="Vendors" sequence="2"
+                          action="account.res_partner_action_supplier"/>
+                <menuitem id="purchase_payment" name="Purchase Orders Payment" sequence="3"
+                          action="account.action_account_payments_payable"/>
+                <menuitem id="vendor_pricelist" name="Vendor PriceList" sequence="4"
+                          action="product.product_supplierinfo_type_action"/>
+            </menuitem>
 
-        <!--Sales-->
-        <menuitem id="sale_menu" name="Sale" parent="retail_menu_root" sequence="3"/>
-        <menuitem id="sale_orders" name="Sales Orders" parent="sale_menu" sequence="1" action="sale.action_orders"/>
-        <menuitem id="menu_products" action="sale.product_template_action" parent="sale_menu" sequence="2"/>
+            <!--Sales-->
+            <menuitem id="sale_menu" name="Sale" sequence="3">
+                <menuitem id="sale_orders" name="Sales Orders" sequence="1" action="sale.action_quotations"/>
+                <menuitem id="sale_customers" name="Customers" sequence="2"
+                          action="account.res_partner_action_customer"/>
+                <menuitem id="sale_payment" name="Sales Orders Payment" sequence="3"
+                          action="account.action_account_payments"/>
+                <menuitem id="sale_pricelist" name="Sales PriceList" sequence="4"
+                          action="product.product_pricelist_action2"/>
+            </menuitem>
 
-        <menuitem id="sale_customers" name="Customers" parent="sale_menu" sequence="2"
-                  action="account.res_partner_action_customer"/>
-        <menuitem id="sale_payment" name="Sales Orders Payment" parent="sale_menu" sequence="3"
-                  action="account.action_account_payments"/>
-        <menuitem id="sale_pricelist" name="Sales PriceList" parent="sale_menu" sequence="4"
-                  action="product.product_pricelist_action2"/>
+            <!--Cash&Bank-->
+            <menuitem id="cash_bank_menu" name="Cash - Bank" sequence="4">
+                <menuitem id="vendor_payment" name="Vendor Payment" sequence="1"
+                          action="account.action_account_payments_payable"/>
+                <menuitem id="customer_payment" name="Customer Payment" sequence="2"
+                          action="account.action_account_payments"/>
+            </menuitem>
 
-        <!--Cash&Bank-->
-        <menuitem id="cash_bank_menu" name="Cash - Bank" parent="retail_menu_root" sequence="4"/>
-        <menuitem id="vendor_payment" name="Vendor Payment" parent="cash_bank_menu" sequence="1"
-                  action="account.action_account_payments_payable"/>
-        <menuitem id="customer_payment" name="Customer Payment" parent="cash_bank_menu" sequence="2"
-                  action="account.action_account_payments"/>
+            <!--reporting-->
+            <menuitem id="retail_report_menu" name="Reports" sequence="5">
+                <menuitem id="stock_report" name="Stock Reports" sequence="1">
+                    <menuitem id="menu_retail_valuation" name="Inventory Report"
+                              sequence="100"
+                              action="stock.action_view_quants"/>
+                </menuitem>
+                <menuitem id="sales_report" name="Sales Reports" sequence="2"
+                          action="sale.action_order_report_all"/>
+                <menuitem id="purchase_report" name="Purchase Report" sequence="3"
+                          action="purchase.action_purchase_order_report_all"/>
+            </menuitem>
 
-        <!--reporting-->
-        <menuitem id="retail_report_menu" name="Reports" parent="retail_menu_root" sequence="5"/>
-        <menuitem id="stock_report" name="Stock Reports" parent="retail_report_menu" sequence="1"/>
-        <menuitem id="sales_report" name="Sales Reports" parent="retail_report_menu" sequence="2"
-                  action="sale.action_order_report_all"/>
-        <menuitem id="purchase_report" name="Purchase Report" parent="retail_report_menu" sequence="3"
-                  action="purchase.action_purchase_order_report_all"/>
+            <!--        <menuitem id="account_report_menu_root" name="Accounting " parent="retail_report_menu" sequence="4"/>-->
+            <!--        <menuitem id="menu_aged_trial_balance1" name="Aged Partner Balance" sequence="7"-->
+            <!--                  action="accounting_pdf_reports.action_account_aged_balance_view" parent="account_report_menu_root"/>-->
+            <!--        <menuitem id="menu_account_report_bs1" name="Balance Sheet" sequence="5"-->
+            <!--                  action="accounting_pdf_reports.action_account_report_bs"-->
+            <!--                  parent="account_report_menu_root" groups="account.group_account_user"/>-->
+            <!--        <menuitem id="menu_general_ledger1" name="General Ledger" sequence="3" parent="account_report_menu_root"-->
+            <!--                  action="accounting_pdf_reports.action_account_general_ledger_menu"-->
+            <!--                  groups="account.group_account_user"/>-->
+            <!--        <menuitem id="menu_print_journal1" name="Journals Audit" sequence="1" parent="account_report_menu_root"-->
+            <!--                  action="accounting_pdf_reports.action_account_print_journal_menu"-->
+            <!--                  groups="account.group_account_manager,account.group_account_user"/>-->
+            <!--        <menuitem id="menu_partner_ledger1" name="Partner Ledger" sequence="2" parent="account_report_menu_root"-->
+            <!--                  action="accounting_pdf_reports.action_account_partner_ledger_menu"-->
+            <!--                  groups="account.group_account_user"/>-->
+            <!--        <menuitem id="menu_account_report_pl1" name="Profit and Loss" sequence="6"-->
+            <!--                  action="accounting_pdf_reports.action_account_report_pl"-->
+            <!--                  parent="account_report_menu_root" groups="account.group_account_user"/>-->
+            <!--        <menuitem id="menu_account_report1" name="Tax Report" sequence="8"-->
+            <!--                  action="accounting_pdf_reports.action_account_tax_report"-->
+            <!--                  parent="account_report_menu_root" groups="account.group_account_manager,account.group_account_user"/>-->
+            <!--        <menuitem id="menu_general_Balance_report1" name="Trial Balance" sequence="4" parent="account_report_menu_root"-->
+            <!--                  action="accounting_pdf_reports.action_account_balance_menu" groups="account.group_account_user"/>-->
 
-<!--        <menuitem id="account_report_menu_root" name="Accounting " parent="retail_report_menu" sequence="4"/>-->
-<!--        <menuitem id="menu_aged_trial_balance1" name="Aged Partner Balance" sequence="7"-->
-<!--                  action="accounting_pdf_reports.action_account_aged_balance_view" parent="account_report_menu_root"/>-->
-<!--        <menuitem id="menu_account_report_bs1" name="Balance Sheet" sequence="5"-->
-<!--                  action="accounting_pdf_reports.action_account_report_bs"-->
-<!--                  parent="account_report_menu_root" groups="account.group_account_user"/>-->
-<!--        <menuitem id="menu_general_ledger1" name="General Ledger" sequence="3" parent="account_report_menu_root"-->
-<!--                  action="accounting_pdf_reports.action_account_general_ledger_menu"-->
-<!--                  groups="account.group_account_user"/>-->
-<!--        <menuitem id="menu_print_journal1" name="Journals Audit" sequence="1" parent="account_report_menu_root"-->
-<!--                  action="accounting_pdf_reports.action_account_print_journal_menu"-->
-<!--                  groups="account.group_account_manager,account.group_account_user"/>-->
-<!--        <menuitem id="menu_partner_ledger1" name="Partner Ledger" sequence="2" parent="account_report_menu_root"-->
-<!--                  action="accounting_pdf_reports.action_account_partner_ledger_menu"-->
-<!--                  groups="account.group_account_user"/>-->
-<!--        <menuitem id="menu_account_report_pl1" name="Profit and Loss" sequence="6"-->
-<!--                  action="accounting_pdf_reports.action_account_report_pl"-->
-<!--                  parent="account_report_menu_root" groups="account.group_account_user"/>-->
-<!--        <menuitem id="menu_account_report1" name="Tax Report" sequence="8"-->
-<!--                  action="accounting_pdf_reports.action_account_tax_report"-->
-<!--                  parent="account_report_menu_root" groups="account.group_account_manager,account.group_account_user"/>-->
-<!--        <menuitem id="menu_general_Balance_report1" name="Trial Balance" sequence="4" parent="account_report_menu_root"-->
-<!--                  action="accounting_pdf_reports.action_account_balance_menu" groups="account.group_account_user"/>-->
+            <!--Configuration-->
+            <menuitem id="custom_retail_configuration_menu" name="Configuration" sequence="6">
+                <!-- Accounting Configuration -->
+                <menuitem id="retail_account_configuration" name="Accounting" sequence="2">
+                    <menuitem id="retail_account_account_menu" name="Accounting" groups="account.group_account_manager"
+                              sequence="3">
+                        <menuitem id="retail_menu_action_account_form" action="account.action_account_form"
+                                  groups="account.group_account_readonly" sequence="1"/>
+                        <menuitem id="retail_menu_action_tax_form" action="account.action_tax_form" sequence="2"/>
+                        <menuitem id="retail_menu_action_account_journal_form"
+                                  action="account.action_account_journal_form"
+                                  groups="account.group_account_manager" sequence="3"/>
+                        <menuitem id="retail_account_report_folder" name="Reporting"
+                                  groups="account.group_account_readonly"
+                                  sequence="4"/>
+                        <menuitem id="retail_menu_action_currency_form" action="base.action_currency_form"
+                                  name="Currencies"
+                                  groups="base.group_multi_currency" sequence="4"/>
+                        <menuitem id="retail_menu_action_account_fiscal_position_form"
+                                  action="account.action_account_fiscal_position_form" sequence="5"/>
+                        <menuitem id="retail_menu_action_account_journal_group_list"
+                                  action="account.action_account_journal_group_list"
+                                  groups="account.group_account_manager"
+                                  sequence="7"/>
+                    </menuitem>
+                </menuitem>
 
-        <!--Configuration-->
-        <menuitem id="custom_retail_configuration_menu" name="Configuration" parent="retail_menu_root" sequence="6"/>
-        <menuitem id="retail_base_settings" name="Settings" parent="custom_retail_configuration_menu" sequence="1"
-                  action="base.res_config_setting_act_window"/>
-        <menuitem id="warehouse_menu" name="Warehouse" parent="custom_retail_configuration_menu" sequence="2"
-                  action="stock.action_warehouse_form"/>
-        <menuitem id="menu_location" action="stock.action_location_form"
-                  parent="custom_retail_configuration_menu" sequence="3"/>
-        <menuitem id="product_category" name="Product Category" parent="custom_retail_configuration_menu" sequence="4"
-                  action="product.product_category_action_form"/>
-        <menuitem action="product.attribute_action" id="menu_attribute_action" name="Product Attributes"
-                  parent="custom_retail_configuration_menu" sequence="5"/>
 
+                <!-- Inventory Configuration -->
+                <menuitem id="retail_inventory_configuration" name="Inventory" sequence="3">
+                    <menuitem id="warehouse_menu" name="Warehouse" sequence="2"
+                              action="stock.action_warehouse_form"/>
+                    <menuitem id="menu_location" action="stock.action_location_form"
+                              sequence="3"/>
+                    <menuitem id="product_category" name="Product Category" sequence="4"
+                              action="product.product_category_action_form"/>
+                    <menuitem id="retail_bom" name="Bom" action="mrp.mrp_bom_form_action" sequence="5"/>
+                    <menuitem id="product_Pack" name="Product Pack" sequence="6" action="action_packing_view"/>
+                    <menuitem action="product.attribute_action" id="menu_attribute_action" name="Product Attributes"
+                              sequence="7"/>
+                    <menuitem id="retail_product_uom_menu" name="Units of Measures" sequence="8">
+                        <menuitem action="uom.product_uom_categ_form_action" id="menu_stock_uom_categ_form_action"
+                                  name="UoM Categories" sequence="1"/>
+                        <menuitem id="menu_stock_uom_form_action" action="uom.product_uom_form_action"
+                                  name="UoM" sequence="2"/>
+                    </menuitem>
+                </menuitem>
+            </menuitem>
+        </menuitem>
     </data>
 </odoo>

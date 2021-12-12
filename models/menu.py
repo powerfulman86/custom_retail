@@ -17,6 +17,7 @@ class Menu(models.Model):
         account_menu = self.env.ref('account.menu_finance')
         contact_menu = self.env.ref('contacts.res_partner_menu_config')
         board_menu = self.env.ref('board.menu_board_my_dash')
+        mrp_menu = self.env.ref('mrp.menu_mrp_root')
 
         if sale_menu:
             menus.discard(sale_menu.id)
@@ -32,4 +33,6 @@ class Menu(models.Model):
             menus.discard(contact_menu.id)
         # if board_menu:
         #     menus.discard(board_menu.id)
+        if mrp_menu:
+            menus.discard(mrp_menu.id)
         return menus
