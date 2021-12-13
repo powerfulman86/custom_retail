@@ -4,10 +4,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 13.0\n"
+"Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-05 14:13+0000\n"
-"PO-Revision-Date: 2021-04-05 14:13+0000\n"
+"POT-Creation-Date: 2021-12-13 08:56+0000\n"
+"PO-Revision-Date: 2021-12-13 08:56+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,111 +16,206 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: custom_retail
-#: model_terms:ir.actions.act_window,help:custom_retail.product_pricelist_action2
-msgid ""
-"A price is a set of sales prices or rules to compute the price of sales order lines based on\n"
-"                    products, product categories, dates and ordered quantities.\n"
-"                    This is the perfect tool to handle several pricings, seasonal discounts, etc."
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__access_warning
+msgid "Access warning"
+msgstr "تحذيرات الوصول"
+
+#. module: custom_retail
+#: model:ir.ui.menu,name:custom_retail.retail_account_report
+msgid "Account Reports"
+msgstr "تقارير الحسابات"
+
+#. module: custom_retail
+#: model:ir.ui.menu,name:custom_retail.retail_account_account_menu
+#: model:ir.ui.menu,name:custom_retail.retail_account_configuration
+msgid "Accounting"
+msgstr "الحسابات"
+
+#. module: custom_retail
+#: model:ir.model.fields,field_description:custom_retail.field_retail_driver__message_needaction
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__message_needaction
+msgid "Action Needed"
 msgstr ""
 
 #. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_invoice_tree
-msgid "Amount Due"
-msgstr "المبلغ المستحق"
+#: model:ir.model.fields,field_description:custom_retail.field_product_packing__active
+msgid "Active"
+msgstr "نشط"
 
 #. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.product_pricelist_view_search
-#: model_terms:ir.ui.view,arch_db:custom_retail.stock_warehouse_view_search
-msgid "Archived"
-msgstr "ارشيف"
+#: model:ir.model.fields,field_description:custom_retail.field_retail_driver__activity_ids
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__activity_ids
+msgid "Activities"
+msgstr ""
 
 #. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.product_template_search_form_view_stock
-msgid "Available Products"
-msgstr "الاصناف المتاحة"
+#: model:ir.model.fields,field_description:custom_retail.field_retail_driver__activity_exception_decoration
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
 
 #. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_invoice_tree
-msgid "Bill Date"
-msgstr "تاريخ الفاتورة"
+#: model:ir.model.fields,field_description:custom_retail.field_retail_driver__activity_state
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__activity_state
+msgid "Activity State"
+msgstr ""
 
 #. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_account_invoice_filter
+#: model:ir.model.fields,field_description:custom_retail.field_retail_driver__activity_type_icon
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_stock_pack_form
+msgid "Approve"
+msgstr "اعتماد"
+
+#. module: custom_retail
+#: model:ir.model.fields.selection,name:custom_retail.selection__stock_pack__state__approve
+msgid "Approved"
+msgstr "تم الاعتماد"
+
+#. module: custom_retail
+#: model:ir.model.fields,field_description:custom_retail.field_retail_driver__message_attachment_count
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: custom_retail
+#: model:ir.ui.menu,name:custom_retail.retail_bom
+msgid "Bom"
+msgstr "صنف مجمع"
+
+#. module: custom_retail
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__campaign_id
+msgid "Campaign"
+msgstr ""
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_stock_pack_form
+msgid "Cancel"
+msgstr "الغاء"
+
+#. module: custom_retail
+#: model:ir.model.fields.selection,name:custom_retail.selection__stock_pack__state__cancel
 msgid "Cancelled"
-msgstr "ملغى"
+msgstr "تم الالغاء"
 
 #. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_order_product_search
+#: model:ir.ui.menu,name:custom_retail.cash_bank_menu
+msgid "Cash - Bank"
+msgstr "النقدية - البنك"
+
+#. module: custom_retail
+#: model:ir.model.fields,field_description:custom_retail.field_product_packing__product_uom_category_id
+msgid "Category"
+msgstr "الفئة"
+
+#. module: custom_retail
+#: model:ir.ui.menu,name:custom_retail.retail_menu_action_account_form
+msgid "Chart of Accounts"
+msgstr "دليل الحسابات"
+
+#. module: custom_retail
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__company_id
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack_line__company_id
 msgid "Company"
 msgstr "الشركة"
 
 #. module: custom_retail
-#: model_terms:ir.actions.act_window,help:custom_retail.res_partner_action_customer
-msgid "Create a new customer in your address book"
-msgstr "انشاء عميل جديد"
+#: model:ir.ui.menu,name:custom_retail.custom_retail_configuration_menu
+msgid "Configuration"
+msgstr "الاعدادات"
 
 #. module: custom_retail
-#: model_terms:ir.actions.act_window,help:custom_retail.product_pricelist_action2
-msgid "Create a new pricelist"
-msgstr "انشاء قوائم اسعار جديده"
+#: model:ir.model.fields,help:custom_retail.field_product_packing__product_uom_category_id
+msgid ""
+"Conversion between Units of Measure can only occur if they belong to the "
+"same category. The conversion will be made based on the ratios."
+msgstr ""
 
 #. module: custom_retail
-#: model_terms:ir.actions.act_window,help:custom_retail.product_template_action
-#: model_terms:ir.actions.act_window,help:custom_retail.product_template_action_product
-msgid "Create a new product"
-msgstr "انشاء صنف جديد"
+#: model_terms:ir.actions.act_window,help:custom_retail.action_packing_view
+msgid "Create a new product Packs"
+msgstr "انشاء تعبئة جديدة للصنف"
 
 #. module: custom_retail
-#: model_terms:ir.actions.act_window,help:custom_retail.action_move_out_receipt_type
-msgid "Create a new sales receipt"
-msgstr "انشاء سند استلام جديد"
+#: model:ir.model.fields,field_description:custom_retail.field_product_packing__create_uid
+#: model:ir.model.fields,field_description:custom_retail.field_retail_driver__create_uid
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__create_uid
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack_line__create_uid
+msgid "Created by"
+msgstr "انشئ بواسطة"
 
 #. module: custom_retail
-#: model_terms:ir.actions.act_window,help:custom_retail.res_partner_action_supplier
-msgid "Create a new supplier in your address book"
-msgstr "انشاء بيانات مورد جديد"
+#: model:ir.model.fields,field_description:custom_retail.field_product_packing__create_date
+#: model:ir.model.fields,field_description:custom_retail.field_retail_driver__create_date
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__create_date
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack_line__create_date
+msgid "Created on"
+msgstr ""
 
 #. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_invoice_tree
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_order_product_search
-msgid "Customer"
-msgstr "عميل"
+#: model:ir.ui.menu,name:custom_retail.retail_menu_action_currency_form
+msgid "Currencies"
+msgstr "العملات"
 
 #. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_order_product_search
-msgid "Customer Country"
-msgstr "بلد العميل"
+#: model:ir.ui.menu,name:custom_retail.customer_payment
+msgid "Customer Payment"
+msgstr "سداد العملاء"
 
 #. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_order_product_search
-msgid "Customer Industry"
-msgstr "صناعة العميل"
+#: model:ir.model.fields,help:custom_retail.field_stock_pack__access_url
+msgid "Customer Portal URL"
+msgstr ""
 
 #. module: custom_retail
-#: model:ir.actions.act_window,name:custom_retail.res_partner_action_customer
 #: model:ir.ui.menu,name:custom_retail.sale_customers
 msgid "Customers"
 msgstr "العملاء"
 
 #. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_order_product_search
-msgid "Date"
-msgstr "التاريخ"
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack_line__name
+msgid "Description"
+msgstr "الوصف"
 
 #. module: custom_retail
-#: model_terms:ir.actions.act_window,help:custom_retail.action_warehouse_form
-msgid "Define a new warehouse"
-msgstr "انشاء مخزن جديد"
+#: model:ir.model.fields,field_description:custom_retail.field_account_move__display_name
+#: model:ir.model.fields,field_description:custom_retail.field_ir_ui_menu__display_name
+#: model:ir.model.fields,field_description:custom_retail.field_product_packing__display_name
+#: model:ir.model.fields,field_description:custom_retail.field_product_template__display_name
+#: model:ir.model.fields,field_description:custom_retail.field_purchase_order__display_name
+#: model:ir.model.fields,field_description:custom_retail.field_retail_driver__display_name
+#: model:ir.model.fields,field_description:custom_retail.field_sale_order__display_name
+#: model:ir.model.fields,field_description:custom_retail.field_sale_order_line__display_name
+#: model:ir.model.fields,field_description:custom_retail.field_stock_move__display_name
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__display_name
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack_line__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
 
 #. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_account_invoice_filter
+#: model:ir.model.fields.selection,name:custom_retail.selection__stock_pack__state__done
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_stock_pack_form
+msgid "Done"
+msgstr "تم"
+
+#. module: custom_retail
+#: model:ir.model.fields.selection,name:custom_retail.selection__stock_pack__state__draft
 msgid "Draft"
 msgstr "مسوده"
 
 #. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_account_invoice_filter
-msgid "Due Date"
-msgstr "تاريخ الاستحقاق"
+#: model:ir.actions.act_window,name:custom_retail.driver_action
+#: model:ir.model.fields,field_description:custom_retail.field_account_bank_statement_line__retail_driver_id
+#: model:ir.model.fields,field_description:custom_retail.field_account_move__retail_driver_id
+#: model:ir.model.fields,field_description:custom_retail.field_account_payment__retail_driver_id
+#: model:ir.model.fields,field_description:custom_retail.field_sale_order__retail_driver_id
+#: model:ir.ui.menu,name:custom_retail.driver_root
+msgid "Driver"
+msgstr "السائق"
 
 #. module: custom_retail
 #: model:ir.model.fields,field_description:custom_retail.field_sale_order__edit
@@ -129,150 +224,389 @@ msgid "Edit"
 msgstr "تعديل"
 
 #. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.retail_purchase_order_form
-#: model_terms:ir.ui.view,arch_db:custom_retail.retail_sale_order_form
-msgid "Edit Price"
-msgstr "تعديل السعر"
-
-#. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_order_product_search
-msgid "Extended Filters"
+#: model:ir.ui.menu,name:custom_retail.retail_menu_action_account_fiscal_position_form
+msgid "Fiscal Positions"
 msgstr ""
 
 #. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_account_invoice_filter
-msgid "Future Activities"
+#: model:ir.model.fields,field_description:custom_retail.field_retail_driver__message_follower_ids
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__message_follower_ids
+msgid "Followers"
 msgstr ""
 
 #. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_account_invoice_filter
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_order_product_search
-msgid "Group By"
-msgstr "تجميع على مستوى"
-
-#. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_account_invoice_filter
-msgid "In Payment"
-msgstr "في السداد"
-
-#. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_account_invoice_filter
-msgid "Invoice"
-msgstr "فاتورة"
-
-#. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_account_invoice_filter
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_invoice_tree
-msgid "Invoice Date"
-msgstr "تاريخ الفاتورة"
-
-#. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_invoice_tree
-msgid "Invoices"
-msgstr "الفواتير"
-
-#. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_account_invoice_filter
-msgid "Late Activities"
+#: model:ir.model.fields,field_description:custom_retail.field_retail_driver__message_channel_ids
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__message_channel_ids
+msgid "Followers (Channels)"
 msgstr ""
 
 #. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_account_invoice_filter
-msgid "My Invoices"
-msgstr "فواتيري"
-
-#. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.product_template_search_form_view_stock
-msgid "Negative Forecasted Quantity"
+#: model:ir.model.fields,field_description:custom_retail.field_retail_driver__message_partner_ids
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__message_partner_ids
+msgid "Followers (Partners)"
 msgstr ""
 
 #. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_account_invoice_filter
-msgid "Not Paid"
-msgstr "غير مدفوعه"
-
-#. module: custom_retail
-#: model_terms:ir.actions.act_window,help:custom_retail.res_partner_action_customer
-msgid "Odoo helps you easily track all activities related to a customer."
+#: model:ir.model.fields,help:custom_retail.field_retail_driver__activity_type_icon
+#: model:ir.model.fields,help:custom_retail.field_stock_pack__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
 msgstr ""
 
 #. module: custom_retail
-#: model_terms:ir.actions.act_window,help:custom_retail.res_partner_action_supplier
-msgid "Odoo helps you easily track all activities related to a supplier."
+#: model_terms:ir.ui.view,arch_db:custom_retail.product_template_only_form_pack_view
+msgid "Hello"
 msgstr ""
 
 #. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_order_product_search
+#: model:ir.model.fields,field_description:custom_retail.field_account_move__id
+#: model:ir.model.fields,field_description:custom_retail.field_ir_ui_menu__id
+#: model:ir.model.fields,field_description:custom_retail.field_product_packing__id
+#: model:ir.model.fields,field_description:custom_retail.field_product_template__id
+#: model:ir.model.fields,field_description:custom_retail.field_purchase_order__id
+#: model:ir.model.fields,field_description:custom_retail.field_retail_driver__id
+#: model:ir.model.fields,field_description:custom_retail.field_sale_order__id
+#: model:ir.model.fields,field_description:custom_retail.field_sale_order_line__id
+#: model:ir.model.fields,field_description:custom_retail.field_stock_move__id
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__id
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack_line__id
+msgid "ID"
+msgstr "المُعرف"
+
+#. module: custom_retail
+#: code:addons/custom_retail/models/stock_packing.py:0
+#, python-format
+msgid "INV:"
+msgstr ""
+
+#. module: custom_retail
+#: model:ir.model.fields,field_description:custom_retail.field_retail_driver__activity_exception_icon
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: custom_retail
+#: model:ir.model.fields,help:custom_retail.field_retail_driver__activity_exception_icon
+#: model:ir.model.fields,help:custom_retail.field_stock_pack__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: custom_retail
+#: model:ir.model.fields,help:custom_retail.field_retail_driver__message_needaction
+#: model:ir.model.fields,help:custom_retail.field_retail_driver__message_unread
+#: model:ir.model.fields,help:custom_retail.field_stock_pack__message_needaction
+#: model:ir.model.fields,help:custom_retail.field_stock_pack__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: custom_retail
+#: model:ir.model.fields,help:custom_retail.field_retail_driver__message_has_error
+#: model:ir.model.fields,help:custom_retail.field_retail_driver__message_has_sms_error
+#: model:ir.model.fields,help:custom_retail.field_stock_pack__message_has_error
+#: model:ir.model.fields,help:custom_retail.field_stock_pack__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: custom_retail
+#: model:ir.ui.menu,name:custom_retail.retail_inventory_configuration
+msgid "Inventory"
+msgstr "المخازن"
+
+#. module: custom_retail
+#: model:ir.ui.menu,name:custom_retail.menu_retail_valuation
+msgid "Inventory Report"
+msgstr "تقارير المخازن"
+
+#. module: custom_retail
+#: model:ir.ui.menu,name:custom_retail.menu_valuation
+msgid "Inventory Valuation"
+msgstr "تقييم المخزون"
+
+#. module: custom_retail
+#: model:ir.ui.menu,name:custom_retail.menu_account_invoice_report_retail
+msgid "Invoice Analysis"
+msgstr "تحليل الفواتير"
+
+#. module: custom_retail
+#: model:ir.model.fields,field_description:custom_retail.field_retail_driver__message_is_follower
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: custom_retail
+#: model:ir.model,name:custom_retail.model_account_move
+msgid "Journal Entry"
+msgstr "قيد اليومية"
+
+#. module: custom_retail
+#: model:ir.ui.menu,name:custom_retail.retail_menu_action_account_journal_group_list
+msgid "Journal Groups"
+msgstr "مجموعات الدفاتر"
+
+#. module: custom_retail
+#: model:ir.ui.menu,name:custom_retail.retail_menu_action_account_journal_form
+msgid "Journals"
+msgstr "الدفاتر"
+
+#. module: custom_retail
+#: model:ir.model.fields,field_description:custom_retail.field_account_move____last_update
+#: model:ir.model.fields,field_description:custom_retail.field_ir_ui_menu____last_update
+#: model:ir.model.fields,field_description:custom_retail.field_product_packing____last_update
+#: model:ir.model.fields,field_description:custom_retail.field_product_template____last_update
+#: model:ir.model.fields,field_description:custom_retail.field_purchase_order____last_update
+#: model:ir.model.fields,field_description:custom_retail.field_retail_driver____last_update
+#: model:ir.model.fields,field_description:custom_retail.field_sale_order____last_update
+#: model:ir.model.fields,field_description:custom_retail.field_sale_order_line____last_update
+#: model:ir.model.fields,field_description:custom_retail.field_stock_move____last_update
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack____last_update
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack_line____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: custom_retail
+#: model:ir.model.fields,field_description:custom_retail.field_product_packing__write_uid
+#: model:ir.model.fields,field_description:custom_retail.field_retail_driver__write_uid
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__write_uid
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack_line__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: custom_retail
+#: model:ir.model.fields,field_description:custom_retail.field_product_packing__write_date
+#: model:ir.model.fields,field_description:custom_retail.field_retail_driver__write_date
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__write_date
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack_line__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: custom_retail
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__location_id
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack_line__location_id
+msgid "Location Stock"
+msgstr "المخزن الرئيسي"
+
+#. module: custom_retail
+#: model:ir.ui.menu,name:custom_retail.menu_location
+msgid "Locations"
+msgstr "المواقع"
+
+#. module: custom_retail
+#: model:ir.model.fields,field_description:custom_retail.field_retail_driver__message_main_attachment_id
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "مرفق رئيسي"
+
+#. module: custom_retail
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__medium_id
+msgid "Medium"
+msgstr ""
+
+#. module: custom_retail
+#: model:ir.model,name:custom_retail.model_ir_ui_menu
+msgid "Menu"
+msgstr "القائمة"
+
+#. module: custom_retail
+#: model:ir.model.fields,field_description:custom_retail.field_retail_driver__message_has_error
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: custom_retail
+#: model:ir.model.fields,field_description:custom_retail.field_retail_driver__message_ids
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: custom_retail
+#: model:ir.model.fields,field_description:custom_retail.field_retail_driver__my_activity_date_deadline
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: custom_retail
+#: code:addons/custom_retail/models/stock_packing.py:0
+#: code:addons/custom_retail/models/stock_packing.py:0
+#: code:addons/custom_retail/models/stock_packing.py:0
+#: code:addons/custom_retail/models/stock_packing.py:0
+#, python-format
+msgid "New"
+msgstr "جديد"
+
+#. module: custom_retail
+#: model:ir.model.fields,field_description:custom_retail.field_retail_driver__activity_date_deadline
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: custom_retail
+#: model:ir.model.fields,field_description:custom_retail.field_retail_driver__activity_summary
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: custom_retail
+#: model:ir.model.fields,field_description:custom_retail.field_retail_driver__activity_type_id
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: custom_retail
+#: model_terms:ir.actions.act_window,help:custom_retail.action_stock_pack_view
+msgid "No packing Order Found. Let's create one!"
+msgstr "لا يوجد اوامر تعبئه جديدة , لنقم بانشاء جديد"
+
+#. module: custom_retail
+#: model:ir.model.fields,field_description:custom_retail.field_retail_driver__note
+msgid "Note"
+msgstr "ملاحظة"
+
+#. module: custom_retail
+#: model:ir.model.fields,field_description:custom_retail.field_product_packing__note
+msgid "Notes"
+msgstr "ملاحظات"
+
+#. module: custom_retail
+#: model:ir.model.fields,field_description:custom_retail.field_retail_driver__message_needaction_counter
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: custom_retail
+#: model:ir.model.fields,field_description:custom_retail.field_retail_driver__message_has_error_counter
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: custom_retail
+#: model:ir.model.fields,help:custom_retail.field_retail_driver__message_needaction_counter
+#: model:ir.model.fields,help:custom_retail.field_stock_pack__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: custom_retail
+#: model:ir.model.fields,help:custom_retail.field_retail_driver__message_has_error_counter
+#: model:ir.model.fields,help:custom_retail.field_stock_pack__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: custom_retail
+#: model:ir.model.fields,help:custom_retail.field_retail_driver__message_unread_counter
+#: model:ir.model.fields,help:custom_retail.field_stock_pack__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: custom_retail
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__order_date
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack_line__order_date
 msgid "Order Date"
-msgstr "تاريخ الاوردر"
+msgstr "تاريخ الامر"
 
 #. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_account_invoice_filter
-msgid "Overdue"
-msgstr "مدفوع بزياده"
-
-#. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_account_invoice_filter
-msgid "Overdue invoices, maturity date passed"
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack_line__pack_id
+msgid "Pack"
 msgstr ""
 
 #. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_account_invoice_filter
-msgid "Paid"
-msgstr "مدفوع"
+#: model:ir.model.fields,field_description:custom_retail.field_product_packing__pack_product_id
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack_line__pack_product_id
+msgid "Pack Product"
+msgstr "الصنف المعبأ"
 
 #. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_account_invoice_filter
-msgid "Period"
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack_line__product_uom_qty
+msgid "Pack Qty"
+msgstr "الكمية المعبأه"
+
+#. module: custom_retail
+#: model:ir.model.fields,field_description:custom_retail.field_product_packing__name
+msgid "Pack Type"
+msgstr "التعبئه"
+
+#. module: custom_retail
+#: model:ir.actions.act_window,name:custom_retail.action_stock_pack_view
+#: model:ir.ui.menu,name:custom_retail.warehouse_pack
+msgid "Packing"
+msgstr "التعبئه"
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.product_template_only_form_pack_view
+msgid "Packs"
 msgstr ""
 
 #. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_account_invoice_filter
-msgid "Posted"
-msgstr "فترة"
+#: model:ir.model.fields,field_description:custom_retail.field_retail_driver__partner_id
+msgid "Partner"
+msgstr ""
 
 #. module: custom_retail
-#: model:ir.actions.act_window,name:custom_retail.product_pricelist_action2
-msgid "Pricelists"
-msgstr "قوائم اسعار"
+#: model:ir.model.fields,field_description:custom_retail.field_stock_move__pack_id
+msgid "Pck Line"
+msgstr ""
 
 #. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_order_product_search
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__access_url
+msgid "Portal Access URL"
+msgstr ""
+
+#. module: custom_retail
+#: model:ir.model.fields,field_description:custom_retail.field_product_packing__product_id
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack_line__product_id
 msgid "Product"
-msgstr "صنف"
+msgstr "الصنف"
 
 #. module: custom_retail
-#: model:ir.actions.act_window,name:custom_retail.product_category_action_form
-#: model_terms:ir.ui.view,arch_db:custom_retail.product_category_list_view
-#: model_terms:ir.ui.view,arch_db:custom_retail.product_category_search_view
-msgid "Product Categories"
-msgstr "فئات الاصناف"
+#: model:ir.ui.menu,name:custom_retail.menu_attribute_action
+msgid "Product Attributes"
+msgstr "خصائص الاصناف"
 
 #. module: custom_retail
 #: model:ir.ui.menu,name:custom_retail.product_category
-#: model_terms:ir.ui.view,arch_db:custom_retail.product_category_list_view
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_order_product_search
 msgid "Product Category"
 msgstr "فئات الاصناف"
 
 #. module: custom_retail
-#: model:ir.actions.act_window,name:custom_retail.product_template_action
-#: model:ir.actions.act_window,name:custom_retail.product_template_action_product
-#: model:ir.ui.menu,name:custom_retail.menu_products
-#: model:ir.ui.menu,name:custom_retail.menu_retail_products
+#: model:ir.ui.menu,name:custom_retail.menu_action_product_margin
+msgid "Product Margins"
+msgstr "هامش ربح الاصناف"
+
+#. module: custom_retail
+#: model:ir.ui.menu,name:custom_retail.product_Pack
+msgid "Product Pack"
+msgstr "تعبئة الصنف"
+
+#. module: custom_retail
+#: model:ir.actions.act_window,name:custom_retail.action_packing_view
+#: model:ir.model,name:custom_retail.model_product_packing
+#: model_terms:ir.ui.view,arch_db:custom_retail.product_packing_tree_view
+msgid "Product Packing"
+msgstr "تعبئة المنتجات"
+
+#. module: custom_retail
+#: model:ir.ui.menu,name:custom_retail.menu_product_packing
+msgid "Product Packings"
+msgstr "تعبئة الاصناف"
+
+#. module: custom_retail
+#: model:ir.model.fields,field_description:custom_retail.field_product_product__pack_line_ids
+#: model:ir.model.fields,field_description:custom_retail.field_product_template__pack_line_ids
+msgid "Product Packs"
+msgstr ""
+
+#. module: custom_retail
+#: model:ir.model,name:custom_retail.model_product_template
+msgid "Product Template"
+msgstr "قالب المنتج"
+
+#. module: custom_retail
+#: model:ir.ui.menu,name:custom_retail.product_product_menu
+msgid "Product Variants"
+msgstr "الاصناف الفرعيه"
+
+#. module: custom_retail
 #: model:ir.ui.menu,name:custom_retail.products
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_stock_pack_form
 msgid "Products"
 msgstr "الاصناف"
-
-#. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.product_pricelist_view_search
-msgid "Products Price"
-msgstr "سعر الاصناف"
-
-#. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.product_pricelist_view_search
-msgid "Products Price Search"
-msgstr "بحث عن اسعار الاصناف"
 
 #. module: custom_retail
 #: model:ir.ui.menu,name:custom_retail.purchase_menu
@@ -280,7 +614,6 @@ msgid "Purchase"
 msgstr "المشتريات"
 
 #. module: custom_retail
-#: model:ir.actions.act_window,name:custom_retail.purchase_action_view
 #: model:ir.model,name:custom_retail.model_purchase_order
 msgid "Purchase Order"
 msgstr "أمر شراء"
@@ -301,20 +634,19 @@ msgid "Purchase Report"
 msgstr "تقرير المشتريات"
 
 #. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_order_product_search
-msgid "Quotations"
-msgstr "عروض اسعار"
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack_line__product_qty
+msgid "Qty"
+msgstr "الكمية"
 
 #. module: custom_retail
-#: model:ir.actions.act_window,name:custom_retail.action_move_in_receipt_type
-#: model:ir.actions.act_window,name:custom_retail.action_move_out_receipt_type
-msgid "Receipts"
-msgstr "الاستلامات"
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__name
+msgid "Reference"
+msgstr "رقم مرجعي"
 
 #. module: custom_retail
-#: model_terms:ir.actions.act_window,help:custom_retail.action_move_in_receipt_type
-msgid "Register a new purchase receipt"
-msgstr "تسجيل سند استلام مشتريات جديد"
+#: model:ir.ui.menu,name:custom_retail.retail_account_report_folder
+msgid "Reporting"
+msgstr "التقارير"
 
 #. module: custom_retail
 #: model:ir.ui.menu,name:custom_retail.retail_report_menu
@@ -322,25 +654,31 @@ msgid "Reports"
 msgstr "التقارير"
 
 #. module: custom_retail
+#: model:ir.model.fields,field_description:custom_retail.field_retail_driver__activity_user_id
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__activity_user_id
+msgid "Responsible User"
+msgstr "المستخدم المسئول"
+
+#. module: custom_retail
 #: model:ir.ui.menu,name:custom_retail.retail_menu_root
 msgid "Retail"
 msgstr "التجزئه"
 
 #. module: custom_retail
+#: model:ir.model,name:custom_retail.model_retail_driver
+msgid "Retail Driver"
+msgstr ""
+
+#. module: custom_retail
+#: model:ir.model.fields,field_description:custom_retail.field_retail_driver__message_has_sms_error
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: custom_retail
 #: model:ir.ui.menu,name:custom_retail.sale_menu
 msgid "Sale"
 msgstr "المبيعات"
-
-#. module: custom_retail
-#: model:ir.actions.act_window,name:custom_retail.sale_action_view
-msgid "Sale Order"
-msgstr "امر بيع"
-
-#. module: custom_retail
-#: model:ir.actions.act_window,name:custom_retail.action_order_report_all
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_order_product_search
-msgid "Sales Analysis"
-msgstr "تحليل المبيعات"
 
 #. module: custom_retail
 #: model:ir.model,name:custom_retail.model_sale_order
@@ -354,7 +692,6 @@ msgstr "بند أمر المبيعات"
 
 #. module: custom_retail
 #: model:ir.ui.menu,name:custom_retail.sale_orders
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_order_product_search
 msgid "Sales Orders"
 msgstr "اوامر البيع"
 
@@ -362,11 +699,6 @@ msgstr "اوامر البيع"
 #: model:ir.ui.menu,name:custom_retail.sale_payment
 msgid "Sales Orders Payment"
 msgstr "سداد اوامر البيع"
-
-#. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_invoice_tree
-msgid "Sales Person"
-msgstr "مسئول البيع"
 
 #. module: custom_retail
 #: model:ir.ui.menu,name:custom_retail.sale_pricelist
@@ -379,41 +711,78 @@ msgid "Sales Reports"
 msgstr "تقارير المبيعات"
 
 #. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_order_product_search
-msgid "Sales Team"
-msgstr "فرق المبيعات"
-
-#. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_account_invoice_filter
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_order_product_search
-msgid "Salesperson"
-msgstr "مسئول المبيعات"
-
-#. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_account_invoice_filter
-msgid "Search Invoice"
-msgstr "البحث عن الفواتير"
-
-#. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_account_invoice_filter
-msgid "Show all records which has next action date is before today"
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__access_token
+msgid "Security Token"
 msgstr ""
 
 #. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_invoice_tree
-msgid "Source Document"
+#: model:ir.model.fields,field_description:custom_retail.field_product_packing__sequence
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack_line__sequence
+msgid "Sequence"
 msgstr ""
 
 #. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_account_invoice_filter
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_order_product_search
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__source_id
+msgid "Source"
+msgstr ""
+
+#. module: custom_retail
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__state
 msgid "Status"
 msgstr "الحاله"
 
 #. module: custom_retail
-#: model:ir.ui.menu,name:custom_retail.stock_menu
+#: model:ir.model.fields,help:custom_retail.field_retail_driver__activity_state
+#: model:ir.model.fields,help:custom_retail.field_stock_pack__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: custom_retail
+#: model:ir.ui.menu,name:custom_retail.retail_stock_menu
 msgid "Stock"
 msgstr "المخازن"
+
+#. module: custom_retail
+#: model:ir.model,name:custom_retail.model_stock_move
+msgid "Stock Move"
+msgstr "حركة المخزون"
+
+#. module: custom_retail
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__move_ids
+msgid "Stock Moves"
+msgstr "حركات المخازن"
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_stock_pack_form
+msgid "Stock Pack"
+msgstr "تعبئة المنتجات"
+
+#. module: custom_retail
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack_line__order_id
+msgid "Stock Pack Order"
+msgstr "امر تعبئة منتجات"
+
+#. module: custom_retail
+#: model:ir.model,name:custom_retail.model_stock_pack
+#: model:ir.ui.menu,name:custom_retail.menu_stock_packing
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_stock_pack_form
+#: model_terms:ir.ui.view,arch_db:custom_retail.view_stock_pack_tree
+msgid "Stock Packing"
+msgstr "تعبئة منتجات"
+
+#. module: custom_retail
+#: model:ir.model,name:custom_retail.model_stock_pack_line
+msgid "Stock Packing Line"
+msgstr ""
+
+#. module: custom_retail
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__order_line
+msgid "Stock Packing Lines"
+msgstr ""
 
 #. module: custom_retail
 #: model:ir.ui.menu,name:custom_retail.stock_report
@@ -421,44 +790,98 @@ msgid "Stock Reports"
 msgstr "تقارير المخازن"
 
 #. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_invoice_tree
-msgid "Tax"
-msgstr "الضرئب"
+#: model:ir.ui.menu,name:custom_retail.retail_menu_action_tax_form
+msgid "Taxes"
+msgstr "الضرائب"
 
 #. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_invoice_tree
-msgid "Tax Excluded"
-msgstr "غير شامله الضرائب"
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__note
+msgid "Terms and conditions"
+msgstr ""
 
 #. module: custom_retail
-#: model_terms:ir.actions.act_window,help:custom_retail.action_order_report_all
+#: model:ir.model.fields,help:custom_retail.field_product_packing__sequence
+msgid "The first in the sequence is the default one."
+msgstr ""
+
+#. module: custom_retail
+#: model:ir.model.fields,help:custom_retail.field_stock_pack__campaign_id
 msgid ""
-"This report performs analysis on your quotations and sales orders. Analysis check your\n"
-"                sales revenues and sort it by different group criteria (salesman, partner, product, etc.) Use this\n"
-"                report to perform analysis on sales not having invoiced yet. If you want to analyse your turnover, you\n"
-"                should use the Invoice Analysis report in the Accounting application."
+"This is a name that helps you keep track of your different campaign efforts,"
+" e.g. Fall_Drive, Christmas_Special"
 msgstr ""
 
 #. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_account_invoice_filter
-msgid "Today Activities"
+#: model:ir.model.fields,help:custom_retail.field_stock_pack__medium_id
+msgid "This is the method of delivery, e.g. Postcard, Email, or Banner Ad"
 msgstr ""
 
 #. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_invoice_tree
-msgid "Total"
-msgstr "الاجمالي"
+#: model:ir.model.fields,help:custom_retail.field_stock_pack__source_id
+msgid ""
+"This is the source of the link, e.g. Search Engine, another domain, or name "
+"of email list"
+msgstr ""
 
 #. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.retail_purchase_order_form
-#: model_terms:ir.ui.view,arch_db:custom_retail.retail_sale_order_form
-msgid "Update"
-msgstr "تحديث"
+#: model:ir.ui.menu,name:custom_retail.warehouse_transfer
+msgid "Transfers"
+msgstr "التحويلات"
 
 #. module: custom_retail
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_invoice_tree
-msgid "Vendor"
-msgstr "مورد"
+#: model_terms:ir.actions.act_window,help:custom_retail.action_stock_pack_view
+msgid "Transfers allow you to move products from one location to another."
+msgstr ""
+
+#. module: custom_retail
+#: model:ir.model.fields,help:custom_retail.field_retail_driver__activity_exception_decoration
+#: model:ir.model.fields,help:custom_retail.field_stock_pack__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: custom_retail
+#: model:ir.model.fields,field_description:custom_retail.field_product_packing__pack_product_uom
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack_line__pack_product_uom
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack_line__product_uom_id
+msgid "Unit of Measure"
+msgstr "وحدات القياس"
+
+#. module: custom_retail
+#: model:ir.ui.menu,name:custom_retail.retail_product_uom_menu
+msgid "Units of Measures"
+msgstr "وحدات القياس"
+
+#. module: custom_retail
+#: model:ir.model.fields,field_description:custom_retail.field_retail_driver__message_unread
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: custom_retail
+#: model:ir.model.fields,field_description:custom_retail.field_retail_driver__message_unread_counter
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: custom_retail
+#: model:ir.ui.menu,name:custom_retail.menu_stock_uom_form_action
+msgid "UoM"
+msgstr "وحدة القياس"
+
+#. module: custom_retail
+#: model:ir.ui.menu,name:custom_retail.menu_stock_uom_categ_form_action
+msgid "UoM Categories"
+msgstr "فئات وحدات القيلس"
+
+#. module: custom_retail
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__user_id
+msgid "User"
+msgstr "المستخدم"
+
+#. module: custom_retail
+#: model:ir.ui.menu,name:custom_retail.vendor_payment
+msgid "Vendor Payment"
+msgstr "سداد الموردين"
 
 #. module: custom_retail
 #: model:ir.ui.menu,name:custom_retail.vendor_pricelist
@@ -466,52 +889,48 @@ msgid "Vendor PriceList"
 msgstr "قائمة اسعار المورد"
 
 #. module: custom_retail
-#: model:ir.actions.act_window,name:custom_retail.product_supplierinfo_type_action
-msgid "Vendor Pricelists"
-msgstr "قوائم اسعار الموردين"
-
-#. module: custom_retail
-#: model:ir.actions.act_window,name:custom_retail.res_partner_action_supplier
 #: model:ir.ui.menu,name:custom_retail.retail_vendor
 msgid "Vendors"
 msgstr "الموردين"
 
 #. module: custom_retail
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__warehouse_id
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack_line__warehouse_id
 #: model:ir.ui.menu,name:custom_retail.warehouse_menu
-#: model_terms:ir.ui.view,arch_db:custom_retail.stock_warehouse_view_search
-#: model_terms:ir.ui.view,arch_db:custom_retail.view_warehouse_tree
 msgid "Warehouse"
 msgstr "المخزن"
 
 #. module: custom_retail
-#: model:ir.actions.act_window,name:custom_retail.action_warehouse_form
-msgid "Warehouses"
-msgstr "المخازن"
-
-#. module: custom_retail
-#: model_terms:ir.actions.act_window,help:custom_retail.action_move_in_receipt_type
-msgid ""
-"When the purchase receipt is confirmed, you can record the\n"
-"                    vendor payment related to this purchase receipt."
+#: model:ir.model.fields,field_description:custom_retail.field_retail_driver__website_message_ids
+#: model:ir.model.fields,field_description:custom_retail.field_stock_pack__website_message_ids
+msgid "Website Messages"
 msgstr ""
 
 #. module: custom_retail
-#: model_terms:ir.actions.act_window,help:custom_retail.action_move_out_receipt_type
-msgid ""
-"When the sale receipt is confirmed, you can record the customer\n"
-"                    payment related to this sales receipt."
+#: model:ir.model.fields,help:custom_retail.field_retail_driver__website_message_ids
+#: model:ir.model.fields,help:custom_retail.field_stock_pack__website_message_ids
+msgid "Website communication history"
 msgstr ""
 
 #. module: custom_retail
-#: model_terms:ir.actions.act_window,help:custom_retail.product_pricelist_action2
-msgid ""
-"You can assign pricelists to your customers or select one when creating a "
-"new sales quotation."
+#: code:addons/custom_retail/models/stock_packing.py:0
+#: code:addons/custom_retail/models/stock_packing.py:0
+#, python-format
+msgid "You Must Select Products For Order."
+msgstr "يجب اختيار منتجات لتنفيذ الامر"
+
+#. module: custom_retail
+#: code:addons/custom_retail/models/stock_packing.py:0
+#, python-format
+msgid "You can not delete a packing Order Which Is Not In Draft State."
+msgstr "لا يمكن حذف امر تعبئة تم تاكيده"
+
+#. module: custom_retail
+#: model_terms:ir.ui.view,arch_db:custom_retail.driver_view_form
+msgid "driver_form"
 msgstr ""
 
 #. module: custom_retail
-#: model_terms:ir.actions.act_window,help:custom_retail.product_template_action
-msgid ""
-"You must define a product for everything you sell or purchase,\n"
-"                    whether it's a storable product, a consumable or a service."
+#: model_terms:ir.ui.view,arch_db:custom_retail.driver_view_tree
+msgid "driver_tree"
 msgstr ""

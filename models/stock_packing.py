@@ -15,7 +15,7 @@ class ProductTemplate(models.Model):
 class StockMove(models.Model):
     _inherit = "stock.move"
 
-    pack_id = fields.Many2one('stock.pack', 'Pck Line', index=True)
+    pack_id = fields.Many2one('stock.pack', 'Pack Line', index=True)
 
 
 class ProductPacking(models.Model):
