@@ -7,7 +7,7 @@
     'category': 'other',
     'version': '0.1',
     'depends': ['base', 'contacts', 'sale', 'purchase', 'stock', 'account', 'calendar',
-                'board'],
+                'board', 'mrp', 'product_margin'],
 
     # always loaded
     'data': [

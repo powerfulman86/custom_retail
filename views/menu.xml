@@ -61,6 +61,12 @@
                           action="sale.action_order_report_all"/>
                 <menuitem id="purchase_report" name="Purchase Report" sequence="3"
                           action="purchase.action_purchase_order_report_all"/>
+                <menuitem id="retail_account_report" name="Account Reports" sequence="4">
+                    <menuitem id="menu_account_invoice_report_retail" name="Invoice Analysis"
+                              action="account.action_account_invoice_report_all" sequence="1"/>
+                    <menuitem id="menu_action_product_margin" action="product_margin.product_margin_act_window"
+                              name="Product Margins" sequence="2"/>
+                </menuitem>
             </menuitem>
 
             <!--        <menuitem id="account_report_menu_root" name="Accounting " parent="retail_report_menu" sequence="4"/>-->
